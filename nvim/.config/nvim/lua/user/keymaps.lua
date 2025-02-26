@@ -28,3 +28,12 @@ end
 
 -- close windows
 keymap("n", "<leader>q", "<CMD>q<CR>", options)
+
+-- Copy ke clipboard sistem
+keymap("v", "<leader>y", '"+y', options) -- Copy saat mode visual
+keymap("n", "<leader>Y", '"+Y', options) -- Copy satu baris penuh saat mode normal
+
+-- Paste dari clipboard sistem
+keymap("n", "<leader>p", '"+p', options) -- Paste setelah kursor
+keymap("n", "<leader>P", '"+P', options) -- Paste sebelum kursor
+keymap("v", "<leader>p", '"+p', options) -- Paste di area yang dipilih
